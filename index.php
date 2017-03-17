@@ -1,1 +1,1 @@
-<?php include_once("giftastic.html"); ?>
+<?php include_once("index.html"); ?>
