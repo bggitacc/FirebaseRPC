@@ -1,0 +1,130 @@
+/* body background */
+
+body {
+    background: #eee;
+}
+
+.panel-body a {
+    word-break: break-all
+}
+
+/* hover effect */
+
+a:hover {
+    color: #000;
+    opacity: .5;
+}
+
+/* jumbo styling */
+
+#jumbo {
+    margin-top: 30px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+    height: 300px;
+    text-shadow: 3px 3px 0 #000,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+    
+    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Article Result Styling */
+
+.well {
+    background: #eee;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+}
+
+/* Article Headline Styling */
+
+.headline {
+    line-height: 35px;
+}
+
+/* label background */
+
+#submitName {
+margin-top: 20px;
+}
+
+#sendMessage{
+margin-top: 20px;
+}
+
+#name {
+
+    width: 45%;
+   
+    
+}
+
+#messages {
+
+margin: 0 auto;
+    width: 100%;
+}
+
+#messageArea {
+
+
+border: 2px solid #dce4ec;
+border-radius: 3px; 
+
+padding: 10px;
+
+
+
+}
+
+.pBtn1 {
+
+    width: 98%;
+    background: #dce4ec;
+    margin: 5px;
+    color: #000;
+}
+
+.pBtn1b {
+
+    width: 98%;
+    background: #dce4ec;
+    margin: 5px;
+    color: #000;
+}
+
+.pBtn2 {
+
+    width: 98%;
+    background: #dce4ec;
+    margin: 5px;
+    color: #000;
+}
+
+
+.pBtn2b {
+
+    width: 98%;
+    background: #dce4ec;
+    margin: 5px;
+    color: #000;
+}
+
+#results {
+
+    height: 195px;
+}
+
+
+
+#box2 {
+
+    height: 195px;
+}
+
+#box1 {
+
+    height: 195px;
+}

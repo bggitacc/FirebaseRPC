@@ -1,0 +1,155 @@
+<!-- Page Decloration -->
+<!DOCTYPE html>
+<!-- Character Set -->
+<html lang="en">
+<!-- Head Section -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Title Of Page -->
+    <title>Rock Paper Scissors Multi-Player</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Bootswatch Styling for Improving the Aesthetics -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Link to external css file -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Link to external Firebase  -->
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+</head>
+<!-- Body Section -->
+
+<body>
+    <!-- Main Page Container -->
+    <div class="container">
+        <!-- Jumbotron for Title And Search -->
+        <div class="jumbotron" id="jumbo">
+
+
+            <h2 class="text-center"><strong><span class="glyphicon glyphicon glyphicon-link"></span> Rock Paper Scissors Multi-Player</strong></h2>
+
+
+            <!-- Player Name Form -->
+
+            <label for="name">Player Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+            <button type="submit" class="btn btn-default history" id="submitName"> Start</button>
+
+            <br><br>
+
+
+        </div>
+        <!-- Main Content Row -->
+        <div class="row">
+            <!-- Left Panel Buttons -->
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+
+                        <h3 class="panel-title"><strong id="p1Name"> Player 1</strong></h3>
+
+                        <div>
+
+                            Wins: <span id="p1Wins">0</span>
+                            <div style="float: right">Losses: <span id="p1Loss">0</span></div>
+
+                        </div>
+                    </div>
+                    <div class="panel-body" id="box1">
+                        <!-- Player 1-->
+
+                        <button id="r" class="btn btn-info pBtn1">Rock</button>
+                        <button id="p" class="btn btn-info pBtn1">Paper</button>
+                        <button id="s" class="btn btn-info pBtn1">Scissors</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Results Box -->
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+
+                        <h3 class="panel-title"><strong> Results</strong></h3>
+                    </div>
+                    <div class="panel-body" id="results">
+                        <!-- results-->
+                        <span id="eval"></span>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Player 2 -->
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+
+                        <h3 class="panel-title"><strong id="p2Name"> Player 2</strong></h3>
+                        <div>
+
+                            Wins: <span id="p2Wins">0</span>
+                            <div style="float: right">Losses: <span id="p2Loss">0</span></div>
+
+                        </div>
+                    </div>
+                    <div class="panel-body" id="box2">
+                        <!-- Player 2 Buttons-->
+
+                        <button id="r" class="btn btn-info pBtn2">Rock</button>
+                        <button id="p" class="btn btn-info pBtn2">Paper</button>
+                        <button id="s" class="btn btn-info pBtn2">Scissors</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Box-->
+
+            <div class="row" id="messages">
+
+                <div class="col-lg-12">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+
+
+                            <h3 class="panel-title"><strong> Messages</strong></h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <!-- Message Panel-->
+
+                            <div id="messageArea"></div>
+                            <br>
+
+                            <input type="text" class="form-control" id="message" placeholder="Message">
+
+                            <button type="submit" class="btn btn-default messageBtn" id="sendMessage" data-pId=""> Send</button>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Code to the Javascript File -->
+        <script src="assets/javascript/rpsfirebase2.js"></script>
+</body>
+
+</html>
